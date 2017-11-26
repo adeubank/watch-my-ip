@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+docker run -it --rm --name my-running-script \
+	-v "$PWD":/data \
+	-e IPADDR_PATH='/data/my-latest-ip.txt' \
+	-w /usr/src/app \
+	watch-my-ip:latest \
+	ruby ./watch-my-ip.rb
