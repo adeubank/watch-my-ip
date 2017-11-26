@@ -42,6 +42,8 @@ end
 begin
 	my_ip = latest_ip
 
+	puts "Current IP Address: #{my_ip}"
+
 	if last_ip && last_ip != my_ip
 		alert(msg: "IP address changed, here is the new IP address: #{my_ip}")
 	end
