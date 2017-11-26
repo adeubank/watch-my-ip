@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-docker run -it --rm --name my-running-script \
+docker run -t --rm --name my-running-script \
 	-v "$PWD":/data \
 	-e IPADDR_PATH='/data/my-latest-ip.txt' \
 	-w /usr/src/app \
