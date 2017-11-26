@@ -1,10 +1,17 @@
 # Watch My IP
 
-The only dependency is docker. Find the right version for you based on your platform. https://docs.docker.com/engine/installation/
+Fetches the public IP address from http://whatismyip.akamai.com and posts a slack message if it changes.
+
 
 ## Quickstart
 
+Need to start by creating a new bot and grabbing the API token. https://my.slack.com/services/new/bot
+
+The only dependency is docker. Find the right version for you based on your platform. https://docs.docker.com/engine/installation/.
+
 ```
+$ cp .env.example .env
+$ # add Slack API token to .env file
 $ ./build
 $ ./watch-my-ip
 ```
